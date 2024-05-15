@@ -20,7 +20,6 @@ extensions = [
     "psm1",
     "psd1",
     "ps",
-    "vue",
     "php",
     "rb",
     "swift",
@@ -40,9 +39,8 @@ extensions = [
     "sql",
     "xml",
     "json",
-    "Dockerfile",
-    "Makefile",
-    "aspx",
+    "dockerfile",
+    "makefile",
     "tcl",
     "f",
     "for",
@@ -85,7 +83,6 @@ sample_content = {
     "psm1": 'Write-Output "Hello, world!"',
     "psd1": 'Write-Output "Hello, world!"',
     "ps": 'Write-Output "Hello, world!"',
-    "vue": '<template>\n  <div>Hello, world!</div>\n</template>\n\n<script>\nexport default {\n  name: "HelloWorld"\n}\n</script>',
     "php": '<?php\n  echo "Hello, world!";\n?>',
     "rb": 'puts "Hello, world!"',
     "swift": 'print("Hello, world!")',
@@ -105,9 +102,8 @@ sample_content = {
     "sql": 'SELECT \'Hello, world!\';',
     "xml": '<?xml version="1.0"?>\n<message>\n  <text>Hello, world!</text>\n</message>',
     "json": '{\n  "greeting": "Hello, world!"\n}',
-    "Dockerfile": 'FROM alpine:latest\nCMD echo "Hello, world!"',
-    "Makefile": 'all:\n\t@echo "Hello, world!"',
-    "aspx": '<%@ Page Language="C#" %>\n<!DOCTYPE html>\n<html>\n  <body>\n    <h1>Hello, World!</h1>\n  </body>\n</html>',
+    "dockerfile": 'FROM alpine:latest\nCMD echo "Hello, world!"',
+    "makefile": 'all:\n\t@echo "Hello, world!"',
     "tcl": 'puts "Hello, world!"',
     "f": 'PROGRAM HELLO\n  PRINT *, "Hello, world!"\nEND PROGRAM HELLO',
     "for": 'PROGRAM HELLO\n  PRINT *, "Hello, world!"\nEND PROGRAM HELLO',
@@ -135,7 +131,8 @@ os.makedirs("test_files", exist_ok=True)
 
 # Generate test files
 for ext in extensions:
-    content = sample_content.get(ext, "// Hello, world!")  # Default content for unknown extensions
+    # Default content for unknown extensions
+    content = sample_content.get(ext, "// Hello, world!")
     if (content == "// Hello, world!"):
         print("Unknown extension: " + ext)
     file_name = f"test_files/test.{ext}"

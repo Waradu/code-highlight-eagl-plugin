@@ -47,7 +47,6 @@ const extensionClassMap = {
   "language-yaml": ["yaml"],
   "language-typescript": ["ts"],
   "language-powershell": ["ps1", "psm1", "psd1", "ps"],
-  "language-vue": ["vue"],
   "language-php": ["php"],
   "language-ruby": ["rb"],
   "language-swift": ["swift"],
@@ -65,7 +64,6 @@ const extensionClassMap = {
   "language-json": ["json"],
   "language-dockerfile": ["dockerfile"],
   "language-makefile": ["makefile"],
-  "language-aspx": ["aspx"],
   "language-tcl": ["tcl"],
   "language-fortran": ["f", "for", "f90", "f95"],
   "language-less": ["less"],
@@ -74,9 +72,9 @@ const extensionClassMap = {
   "language-javascript": ["jsx"],
   "language-ada": ["ada"],
   "language-brainfuck": ["bf"],
-  "language-dns-zone-file": ["dns", "zone", "bind"],
+  "language-dns": ["dns", "zone", "bind"],
   "language-haxe": ["hx"],
-  "language-ini-toml": ["ini", "toml"],
+  "language-ini": ["ini", "toml"],
   "language-julia-repl": ["julia-repl"],
   "language-kotlin": ["kt", "kts"]
 };
