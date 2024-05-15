@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-family: "Fira Code";
+}
+
+#editor-container {
+  display: flex;
+}
+
+#filename {
+  margin-left: 20px;
+  margin-top: 10px;
+  color: #ddd;
+}
+
+#line-numbers {
+  padding: 10px;
+  color: #555;
+  text-align: right;
+  width: max-content;
+  overflow: hidden;
+  user-select: none;
+  height: max-content;
+}
+
+#content {
+  padding: 10px;
+  padding-left: 5px;
+  flex-grow: 1;
+  white-space: pre;
+  overflow: auto;
+  height: max-content;
+  width: max-content;
+}
+
+.hljs {
+  background-color: transparent !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #757575;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8b8b8b;
+}
