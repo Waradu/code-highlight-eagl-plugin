@@ -13,7 +13,7 @@
         "htm",
         "scss",
         "js",
-        "rss",
+        "rs",
         "cpp",
         "c++",
         "h",
@@ -70,7 +70,7 @@
     ],
     "devTools": true,
     "preview": {
-        "py,css,html,htm,scss,js,rss,cpp,c++,h,cs,java,yaml,ts,ps1,psm1,psd1,ps,php,rb,swift,kt,kts,go,pl,R,r,sh,console,clj,scala,hs,lua,erl,sql,xml,json,dockerfile,makefile,tcl,f,for,f90,f95,less,styl,coffee,cson,iced,jsx,ada,bf,dns,zone,bind,hx,ini,toml,julia-repl": {
+        "py,css,html,htm,scss,js,rs,cpp,c++,h,cs,java,yaml,ts,ps1,psm1,psd1,ps,php,rb,swift,kt,kts,go,pl,R,r,sh,console,clj,scala,hs,lua,erl,sql,xml,json,dockerfile,makefile,tcl,f,for,f90,f95,less,styl,coffee,cson,iced,jsx,ada,bf,dns,zone,bind,hx,ini,toml,julia-repl": {
             "viewer": {
                 "path": "viewer/py.html"
             }

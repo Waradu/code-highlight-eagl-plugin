@@ -40,7 +40,7 @@ const extensionClassMap = {
   "language-html": ["html", "htm"],
   "language-scss": ["scss"],
   "language-js": ["js"],
-  "language-rust": ["rss"],
+  "language-rust": ["rs"],
   "language-cpp": ["cpp", "c++", "h"],
   "language-csharp": ["cs"],
   "language-java": ["java"],
